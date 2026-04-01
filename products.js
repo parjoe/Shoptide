@@ -1,0 +1,20 @@
+const products = [
+{
+id:1,
+name:"Sneakers",
+price:15000,
+image:"https://via.placeholder.com/200"
+},
+{
+id:2,
+name:"Watch",
+price:8000,
+image:"https://via.placeholder.com/200"
+},
+{
+id:3,
+name:"Phone",
+price:120000,
+image:"https://via.placeholder.com/200"
+}
+];

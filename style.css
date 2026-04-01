@@ -1,0 +1,60 @@
+body {
+font-family: Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header {
+display:flex;
+justify-content:space-between;
+padding:15px;
+background:#111;
+color:#fff;
+}
+
+#products {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.product {
+background:#fff;
+padding:10px;
+border-radius:10px;
+}
+
+button {
+background:#ff6600;
+color:white;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+
+.cart {
+position:fixed;
+top:0;
+right:-100%;
+width:300px;
+height:100%;
+background:#fff;
+padding:20px;
+transition:0.3s;
+}
+
+.cart.active {
+right:0;
+}
+
+.whatsapp {
+position:fixed;
+bottom:20px;
+right:20px;
+background:green;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+}

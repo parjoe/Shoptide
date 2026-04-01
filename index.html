@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shoptide</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+
+<body>
+
+<header>
+<h1>Shoptide</h1>
+<button onclick="openCart()">Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<section id="products"></section>
+
+<!-- CART -->
+<div id="cart" class="cart">
+<h2>Your Cart</h2>
+<div id="cart-items"></div>
+<h3>Total: ₦<span id="total">0</span></h3>
+
+<button onclick="payWithPaystack()">Checkout</button>
+<button onclick="closeCart()">Close</button>
+</div>
+
+<!-- CONTACT FORM -->
+<section class="contact">
+<h2>Contact Us</h2>
+<form action="https://formspree.io/f/yourID" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Message"></textarea>
+<button type="submit">Send</button>
+</form>
+</section>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/2347044718879" class="whatsapp" target="_blank">
+Chat on WhatsApp
+</a>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
